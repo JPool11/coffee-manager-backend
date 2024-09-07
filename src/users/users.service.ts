@@ -7,7 +7,10 @@ export class UsersService {
     private users = [];
 
     create(createUserDto: CreateUserDto) {
-        const newUser = { id: Date.now(), ...createUserDto };
+        const newUser = { 
+            id: Date.now(), 
+            ...createUserDto 
+        };
         this.users.push(newUser);
         return newUser;
     }

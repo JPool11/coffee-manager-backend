@@ -1,120 +1,85 @@
-<div style="text-align:center">
+<p align="center">
+  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
+</p>
 
-# Proyecto Coffee Manager
+[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
+[circleci-url]: https://circleci.com/gh/nestjs/nest
 
-<div style="width:320px;margin:auto">
+  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
+    <p align="center">
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
+<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
+<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
+<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
+<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
+<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
+  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
+    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
+  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
+</p>
+  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
+  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-![Logo del Proyecto Coffee Manager](./coffee-manager-frontend-flutter/public/coffee-manager.jpeg)
+## Description
 
-</div>
+[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-</div>
+## Project setup
 
-<details style="font-size:1.2rem">
-<summary style="font-size:1.5rem;font-weight:bold">Tabla de contenidos</summary>
-
-- [Descripción del Proyecto](#descripción-del-proyecto)
-- [Backend](#backend)
-  - [Nest.js](#nestjs)
-- [Frontend](#frontend)
-  - [Instalación](#instalación-frontend)
-- [Subir cambios a Github](#subir-cambios-a-github)
-
-</details>
-
-## Descripción del Proyecto
-
-Coffee Manager es una aplicación diseñada para gestionar una finca de café. Incluye funcionalidades CRUD para la gestión de usuarios, inventario, ventas y más. La arquitectura del proyecto está basada en microservicios utilizando Nest.js para el backend y ReactJS para el frontend.
-
-## Backend
-
-El Backend está desarrollado con Nest.js, un framework de Node.js para construir aplicaciones eficientes y escalables del lado del servidor.
-
-### Nest.js
-
-1. **Instalación y Configuración del Proyecto**:
-
-    - Clonar el repositorio:
-
-    ```sh
-    git clone https://github.com/GEMS-INNOVATIONS/coffee-manager-backend.git
-    cd coffee-manager
-    ```
-
-    - Instalar dependencias:
-
-    ```sh
-    npm install
-    ```
-
-    - Iniciar el servidor en modo desarrollo:
-
-    ```sh
-    npm run start:dev
-    ```
-
-2. **Estructura del Proyecto**:
-
-    - `src/`: Contiene el código fuente de la aplicación.
-    - `users.service.ts`: Servicio para la gestión de usuarios.
-    - `users.controller.ts`: Controlador para las rutas de usuarios.
-    - `dto/`: Contiene los Data Transfer Objects (`CreateUserDto` y `UpdateUserDto`).
-
-## Frontend
-
-El Frontend está desarrollado en Flutter.
-
-### Instalación Front
-
-1. Instala los paquetes de NPM
-
-```sh
-npm install
+```bash
+$ npm install
 ```
 
-2. Ejecuta el proyecto
+## Compile and run the project
 
-```sh
-npm run dev
+```bash
+# development
+$ npm run start
+
+# watch mode
+$ npm run start:dev
+
+# production mode
+$ npm run start:prod
 ```
 
-## Github
+## Run tests
 
-### Subir cambios a Github
+```bash
+# unit tests
+$ npm run test
 
-1. Crea tu rama, debes estar sobre la rama main
+# e2e tests
+$ npm run test:e2e
 
-```sh
-git checkout -b "nombre-de-tu-rama"
+# test coverage
+$ npm run test:cov
 ```
 
-2. Añade los archivos al stage
+## Resources
 
-```sh
-git add .
-```
+Check out a few resources that may come in handy when working with NestJS:
 
-2. Haz commit de tus cambios
+- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
+- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
+- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
+- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
+- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
+- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
+- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
 
-```sh
-git commit -m "feat: add invoices form"
-```
+## Support
 
-3. Sube los cambios a tu rama
+Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
-```sh
-git push origin "nombre-de-tu-rama"
-```
+## Stay in touch
 
-4. Haz un pull request desde Github en la pestaña `Pull requests` debes seleccionar el botón `New pull request`
+- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
+- Website - [https://nestjs.com](https://nestjs.com/)
+- Twitter - [@nestframework](https://twitter.com/nestframework)
 
-5. Selecciona desde qué rama vas a hacer merge hacia la `main`
+## License
 
-6. Configura el PR
-
-- Selecciona el `Reviewer` (quién va a revisar los cambios)
-- Selecciona el `Assignees` (quién realizó los cambios)
-- Selecciona el `Label` (etiquetas para categorizar)
-- Llena la `Descripción` de la PR
-
-¡Y listo! Ya tus cambios serán Mergeados por el `Reviewer` ❤️.
+Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).

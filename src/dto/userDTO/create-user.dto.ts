@@ -8,4 +8,5 @@ export class CreateUserDto {
     readonly tipo_usuario: string;
     readonly id_finca: number;
     readonly id_pase: number;
+    readonly uuid: string;
 }

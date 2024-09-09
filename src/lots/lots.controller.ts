@@ -1,6 +1,7 @@
 import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
 import { LotsService } from './lots.service';
 import { CreateLotDto } from '../dto/lotsDTO/create-lot.dto';
+import { UpdateLotDto } from '../dto/lotsDTO/update-lot.dto';
 
 @Controller('lots')
 export class LotsController {
@@ -27,7 +28,7 @@ export class LotsController {
     }
 
     @Patch(':id')
-    update(@Param('id') id: number, @Body() updateLotDto: Partial<CreateLotDto>) {
+    update(@Param('id') id: number, @Body() updateLotDto: UpdateLotDto) {
         return this.lotsService.update(id, updateLotDto);
     }
 

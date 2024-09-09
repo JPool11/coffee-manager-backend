@@ -1,5 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { CreateLotDto } from '../dto/lotsDTO/create-lot.dto';
+import { UpdateLotDto } from '../dto/lotsDTO/update-lot.dto';
 
 @Injectable()
 export class LotsService {
@@ -26,7 +27,7 @@ export class LotsService {
         return this.lots.find(lot => lot.id === id);
     }
 
-    update(id: number, updateLotDto: Partial<CreateLotDto>) {
+    update(id: number, updateLotDto: UpdateLotDto) {
         const lotIndex = this.lots.findIndex(lot => lot.id === id);
         if (lotIndex >= 0) {
             this.lots[lotIndex] = { ...this.lots[lotIndex], ...updateLotDto };
@@ -34,6 +35,7 @@ export class LotsService {
         }
         return null;
     }
+
 
     remove(id: number) {
         const lotIndex = this.lots.findIndex(lot => lot.id === id);
